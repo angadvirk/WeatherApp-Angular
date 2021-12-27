@@ -1,0 +1,25 @@
+<br>
+<div class="container" *ngIf="showTable">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th class="col-1">#</th>
+        <th class="col-3">Date</th>
+        <th class="col-2">Status</th>
+        <th class="col-2">Temp High (°F)</th>
+        <th class="col-2">Temp Low (°F)</th>
+        <th class="col-2">Wind Speed (mph)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of rows">
+        <td *ngFor="let column of headers">
+          <div *ngIf="column === 'date'" (click)="showDetails(row[column])" class="tableLink p-0">{{ row[column] }}</div>
+          <img class="statusImg" *ngIf="column === 'status'" src="../../../../assets/images/{{row['status_img']}}" alt="{{row['status']}}">
+          <div *ngIf="column === 'status'" class="statusText">{{ row[column] }}</div>
+          <div *ngIf="column !== 'status' && column !== 'date'">{{ row[column] }}</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
