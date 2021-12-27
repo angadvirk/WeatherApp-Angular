@@ -1,0 +1,15 @@
+<br>
+
+<!-- Search Component -->
+<app-search></app-search>
+
+<!-- Nav containing Router Links -->
+<div class="container">
+  <nav id="mainNav" class="nav nav-pills justify-content-center">
+    <a id="resultsLink" class="nav-link" [@resultsButtonState]="stateName" routerLink="/results" routerLinkActive="activeState">Results</a>
+    <a id="favoritesLink" class="nav-link" [@favoritesButtonState]="stateName" routerLink="/favorites" routerLinkActive="activeState">Favorites</a>
+  </nav>
+</div>
+
+<!-- Router Outlet to show Results/Favorites Component -->
+<router-outlet></router-outlet>

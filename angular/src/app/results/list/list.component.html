@@ -1,0 +1,36 @@
+<div class="container">
+  <ul class="nav nav-tabs justify-content-end">
+    <li class="nav-item">
+      <a 
+        class="nav-link listLink"
+        href="javascript:void(0)"
+        [ngClass]="{'active': activeView === 'table'}"
+        (click)="updateView('table')">
+        Day View
+      </a>
+    </li>
+    <li class="nav-item">
+      <a 
+        class="nav-link listLink" 
+        href="javascript:void(0)"
+        [ngClass]="{'active': activeView === 'chart'}"
+        (click)="updateView('chart')">
+        Daily Temp Chart
+      </a>
+    </li>
+    <li class="nav-item">
+      <a 
+        class="nav-link listLink" 
+        href="javascript:void(0)"
+        [ngClass]="{'active': activeView === 'meteogram' }"
+        (click)="updateView('meteogram')">
+        Meteogram
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- Conditionally show Table/Chart/Meteogram -->
+<app-table *ngIf="activeView === 'table'" (detailsRequested)="showDetails($event)" [@fadeInOut]></app-table>
+<app-chart *ngIf="activeView === 'chart'"></app-chart>
+<app-meteogram *ngIf="activeView === 'meteogram'"></app-meteogram>

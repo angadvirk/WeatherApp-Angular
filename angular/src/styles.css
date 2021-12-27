@@ -1,0 +1,119 @@
+#searchForm {
+  padding-left: 15%;
+  padding-right: 15%;
+  border: 2px solid rgb(209, 209, 209);
+  margin-bottom: 1.5rem;
+}
+#searchButton {
+  margin-right: 1em;
+}
+#resultsLink {
+  margin-right: 0.25em;
+}
+#favoritesLink {
+  margin-left: 0.25em;
+}
+.secondaryButton {
+  background-color: white;
+}
+.secondaryButton:hover {
+  background-color: #333;
+}
+.requiredStar {
+  color: orangered;
+}
+#progressBarContainer {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+#favoriteButton {
+  border: 2px solid rgb(189, 189, 189);
+  background-color: rgb(252, 252, 252);
+  padding: 4px 8px;
+  margin-right: 0.5em;
+}
+#removeFavoriteButton {
+  border: 2px solid rgb(189, 189, 189);
+  background-color: rgb(252, 252, 252);
+  padding: 4px 8px;
+  margin-right: 0.5em;
+}
+.statusImg {
+  display: inline-block;
+  height: 2em;
+  width: 2em;
+  margin-right: 0.5em;
+}
+.statusText {
+  display: inline-block;
+}
+.tableLink {
+  color: #007bff;
+  text-decoration: underline;
+}
+.tableLink:hover {
+  cursor:pointer;
+}
+.resultView {
+  margin: 4em 0;
+  /* min-height: 8em; */
+}
+#detailsButton {
+  padding-right: 8px;
+  display:inline-block;
+}
+#detailsButtonText {
+  margin: 0;
+  display: inline-block;
+}
+#detailsButtonText:hover {
+  cursor:pointer;
+  text-decoration: underline;
+}
+#listButton {
+  padding-left: 8px;
+}
+.twitterButton {
+  background: linear-gradient(#acaaaa, #e2e2e2);
+  border: 1.5px solid rgb(179, 179, 179);
+  border-radius: 0.25em;
+  padding: 0.25em 0.75em;
+}
+.twitterButton:active {
+  background: linear-gradient(#807f7f, #bdbdbd);
+}
+#trashButton:hover {
+  cursor: pointer;
+}
+#favList {
+  min-height: 400px
+}
+#map {
+  height: 600px;
+  /* The height is 600px */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+.activeState {
+  color: white;
+  transition: color 150ms;
+  /* border-radius: 0.25rem; */
+}
+.activeState:hover {
+  color: white;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Phones */
+@media only screen and (max-width: 600px) {
+  html {font-size:0.8rem;}
+} 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .html {font-size:0.9rem;}
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .html {font-size:1rem;}
+}

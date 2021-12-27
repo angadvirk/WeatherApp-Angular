@@ -1,0 +1,55 @@
+<br>
+<div class="container">
+  <table 
+  id="table"
+  class="table table-striped"
+  data-height="460">
+    <!-- <thead class="invisible">
+      <th class="col-md-4"></th>
+      <th class="col-md-8"></th>
+    </thead> -->
+    <tbody>
+      <tr>
+        <td class="col-6 col-md-5 col-lg-4 font-weight-bold">Status</td>
+        <td class="col-6 col-md-7 col-lg-8">{{ detailsObject.status }}</td>
+      </tr>
+      <tr>
+        <td class="font-weight-bold">Max Temperature</td>
+        <td>{{ detailsObject.maxTemp }}</td>
+      </tr>
+      <tr>
+        <td class="font-weight-bold">Min Temperature</td>
+        <td>{{ detailsObject.minTemp }}</td>
+      </tr>
+      <tr>
+        <td class="font-weight-bold">Apparent Temperature</td>
+        <td>{{ detailsObject.appTemp }}</td>
+      </tr>
+      <tr>
+        <td class="font-weight-bold">Sun Rise Time</td>
+        <td>{{ detailsObject.sunrise }}</td>
+      </tr>
+      <tr>
+        <td class="font-weight-bold">Sun Set Time</td>
+        <td>{{ detailsObject.sunset }}</td>
+      </tr>
+      <tr>
+        <td class="font-weight-bold">Humidity</td>
+        <td>{{ detailsObject.humidity }}</td>
+      </tr>
+      <tr>
+        <td class="font-weight-bold">Wind Speed</td>
+        <td>{{ detailsObject.windSpeed }}</td>
+      </tr>
+      <tr>
+        <td class="font-weight-bold">Visibility</td>
+        <td>{{ detailsObject.visibility }}</td>
+      </tr>
+      <tr>
+        <td class="font-weight-bold">Cloud Cover</td>
+        <td>{{ detailsObject.cloudCover }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div id="map"></div>
+</div>
