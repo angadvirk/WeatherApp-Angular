@@ -1,5 +1,6 @@
 # WeatherApp-Angular
-Weather App made using Angular & Bootstrap 4. Powered by https://www.tomorrow.io API. NodeJS Backend hosted on Google AppEngine. \
+Weather App made using Angular & Bootstrap 4. Powered by https://www.tomorrow.io API. NodeJS Backend hosted on Google AppEngine.
+
 **Link to Deployed App:** https://cs571-hw-project.wl.r.appspot.com.
 
 ## What I Learned:
