@@ -16,9 +16,9 @@ import { MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
 export class SearchComponent implements OnInit {
   // api urls (for direct calls)
   ipinfo_url: string = "https://ipinfo.io/json?token=1d7082a2c0d29f";
-  geocoding_url: string = "https://maps.googleapis.com/maps/api/geocode/json"; 
   // api urls (for calls through backend proxy)
   tomorrow_url: string = "https://cs571-hw-project.wl.r.appspot.com/weather";
+  geocoding_url: string = "https://cs571-hw-project.wl.r.appspot.com/geocoding"; 
   autocomplete_url: string = "https://cs571-hw-project.wl.r.appspot.com/autocomplete";
   // form
   form = new FormGroup({
@@ -204,7 +204,7 @@ export class SearchComponent implements OnInit {
       var city = this.form.get("cityInput")?.value.trim().replace(/,/g, '').replace(/\s+/g, '%20');
       var state = this.form.get("stateSelect")?.value;
       if (!state) { state = "CA" }
-      api_url = this.geocoding_url + "?address=" + street + city + state + "&key=AIzaSyDe-gIMRLcnp3uVz9l4ZOrCoy9zwXLRohI";
+      api_url = this.geocoding_url + "?address=" + street + city + state;
     }
     // call ipinfo/geocoding and then tomorrow.io api
     this.httpService.fetchData(api_url).subscribe(
