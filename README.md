@@ -7,5 +7,6 @@ Weather App made using Angular & Bootstrap 4. Powered by https://www.tomorrow.io
 
 ## What I Learned:
 * Angular & Bootstrap Fundamentals.
+* Setting up a server using NodeJS.
 * Conditionally adding/removing DOM elements using Structural Directives in Angular (NgIf, NgFor).
 * Making HTTP requests using Angular's HTTP Client API. 
